@@ -1,44 +1,30 @@
 <H1>Information for Project Script and Tidy Data Set File</H1>
 <br/>
 To run the run_analysis.R script you must do the following:
-1) Copy the script to a directory
-2) Set the working directory to this directory
-3) extract the UCI HAR Dataset to this directory (it should create a subdirectory named UCI HAR Dataset)
-4) Run the scipt -- it will create a file named "TidyDataSet.txt"
-5) To read the TidyDataSet.txt file you can run the following R code in the working directory:
-data <- read.table("TidyDataSet.txt", header = TRUE)
-View(data)
+<ol>
+<li>Copy the script to a directory</li>
+<li>Set the working directory to this directory</li>
+<li>extract the UCI HAR Dataset to this directory (it should create a subdirectory named UCI HAR Dataset)</li>
+<li>Run the scipt -- it will create a file named "TidyDataSet.txt"</li>
+<li>To read the TidyDataSet.txt file you can run the following R code in the working directory:<br/>
+data <- read.table("TidyDataSet.txt", header = TRUE)<br/>
+View(data)<br/>
 <br/>
 <br/>
 <H2> Description of Script</H2>
 The run_analysis script follows the steps described in the project assignment:
-You should create one R script called run_analysis.R that does the following. 
+You should create one R script called run_analysis.R that does the following: 
 <br/>
-    1) Merges the training and the test sets to create one data set.
-    2) Extracts only the measurements on the mean and standard deviation for each measurement. 
-    3) Uses descriptive activity names to name the activities in the data set
-    4) Appropriately labels the data set with descriptive variable names. 
-    5) From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+    1) Merges the training and the test sets to create one data set.<br/>
+    2) Extracts only the measurements on the mean and standard deviation for each measurement. <br/>
+    3) Uses descriptive activity names to name the activities in the data set<br/>
+    4) Appropriately labels the data set with descriptive variable names. <br/>
+    5) From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.<br/>
 <br/>
 <H2> Codebook for variables</H2>
 The variables in the resulting tidy data set are unitless averages of the mean and standard deviation measurements in the UCI HAR Dataset.  Below is a short description of each variable.  Consult the features_info.txt file in the original data for a description of that data's variables.
 <br/>
-<style type="text/css">
-    table.tableizer-table {
-	border: 1px solid #CCC; font-family: Arial, Helvetica, sans-serif;
-	font-size: 12px;
-} 
-.tableizer-table td {
-	padding: 4px;
-	margin: 3px;
-	border: 1px solid #ccc;
-}
-.tableizer-table th {
-	background-color: #104E8B; 
-	color: #FFF;
-	font-weight: bold;
-}
-</style><table class="tableizer-table">
+<table class="tableizer-table">
 <tr class="tableizer-firstrow"><th>Variable</th><th>Description</th></tr>
  <tr><td>Subject</td><td>The number of the test subject</td></tr>
  <tr><td>ActivityName</td><td>The activity being performed</td></tr>
